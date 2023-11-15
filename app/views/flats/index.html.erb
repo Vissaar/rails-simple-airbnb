@@ -1,0 +1,8 @@
+<%= link_to "Add new flat", new_flat_path  %>
+
+<%= "All out flats  (#{@flat.count})" %>
+<ul>
+  <% @flat.each do |flat| %>
+    <li><%= flat.name %></li>
+  <% end %>
+</ul>
